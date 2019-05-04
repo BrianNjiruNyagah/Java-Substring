@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String S = in.next();
+        int start = in.nextInt();
+        int end = in.nextInt();
+        
+        //condition for producing a section of a string 
+        if((S.length()<100) && (start>=0) && (start<=S.length()) && (end>=0) && (end<S.length()+1)){
+            System.out.println(S.substring(start,end));
+        }
+        
+    }
+}
+
